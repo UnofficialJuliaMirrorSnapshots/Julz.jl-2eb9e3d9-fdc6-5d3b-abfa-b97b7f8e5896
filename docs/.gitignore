@@ -1,31 +1,24 @@
-*.jl.cov
-*.jl.*.cov
-*.jl.mem
-
-.DS_Store
-
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-**/dist
-docs/**/tmp
+/dist
+/tmp
 
 # dependencies
-**/node_modules
-**/bower_components
+/node_modules
+/bower_components
 
 # misc
-**/.sass-cache
-**/connect.lock
-**/coverage/*
-**/libpeerconnection.log
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
 npm-debug.log*
 testem.log
 
 .DS_Store
 /tmp/*
-docs/build/
-docs/site/
+/docs/build/*
 
 *-checkpoint.ipynb
 

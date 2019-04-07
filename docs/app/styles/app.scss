@@ -1,0 +1,103 @@
+$accent: "grey";
+$warn: "teal";
+
+@import 'ember-paper';
+@import 'paper-data-table';
+
+.cs-full-area {
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  @extend .cs-full-area;
+  background-color: color($warn, '100');
+}
+
+body > .ember-view {
+  display: flex;
+  flex-direction: column;
+  @extend .cs-full-area;
+}
+
+.inner-sidenav {
+  display: flex;
+}
+
+.site-content-toolbar {
+  background-color: color($accent, '300') !important;
+}
+
+.cs-sidenav__header img {
+  width: 72%;
+}
+
+.inner-sidenav .active {
+  background-color: color($accent, '200');
+}
+
+.submenu-item .md-list-item-inner {
+  padding-left: 16px;
+}
+
+md-card {
+  flex: 1 0;
+  margin: 20px;
+}
+
+.inner-sidenav md-icon {
+  margin-right: 6px !important;
+}
+
+.cs-flex {
+  display: flex;
+  flex: 1 0;
+}
+
+.cs-docs-body {
+  flex: 0 0 initial;
+}
+
+.cs-docs-body md-card-title {
+  background-color: color($accent, '100');
+  flex: 0 0 auto;
+}
+
+.cs-docs-body md-card-content {
+  flex: 0 1 auto;
+  overflow-y: scroll;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  line-height: 22px;
+}
+
+code {
+  background-color: color($accent, '100');
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.cs-hidden {
+  display: none;
+}
+
+md-table-container th, md-table-container td {
+  font-size: initial !important;
+}
+
+md-card {
+  max-width: calc(100vw - 40px);
+}
+
+pre.code-block {
+  overflow-x: scroll;
+}
+
+@media (min-width: 1051px) and (max-width: 1200px) {
+  .cs-cli-alias {
+    max-width: 60vw;
+  }
+}
